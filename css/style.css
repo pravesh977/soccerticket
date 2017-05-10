@@ -1,0 +1,62 @@
+body {
+    background: black;
+}
+.navbar {
+    font-size:24px;
+
+}
+.navbar li a{
+    text-decoration: none;
+}
+.navbar li {
+    text-decoration: none;
+}
+#indexmain {
+    font-size: 40px;
+}
+
+#indexmain img {
+    width:100%;
+}
+
+footer img {
+    max-height: 140px;
+    max-width: 140px;
+}
+
+footer p {
+    font-size: 24px;
+}
+
+footer a {
+    margin: 10px;
+}
+footer {
+    margin: 20px;
+}
+#indexmain {
+    margin:20px;
+}
+.sectionselector {
+    font-size: 30px;
+    text-align:center;
+}
+.sectionselector img {
+/*    text-align:center;*/
+    margin:0 auto;
+}
+.selectdiv {
+    font-size: 32px;
+    width:50%;
+    margin:0 auto;
+    text-align:center;
+}
+#ticketform {
+    text-align:center;
+}
+
+.printtickethere {
+    background:red;
+    color:blue;
+    font-size: 24px;
+}

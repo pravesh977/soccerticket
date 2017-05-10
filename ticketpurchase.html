@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stadium Tickets App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+      
+        <nav class="navbar navbar-default" style="background-color: black">
+            <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="ticketpurchase.html">Purchase Tickets</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="background-color: black">More <span class="caret"></span></a>
+          <ul class="dropdown-menu" style="background-color: black">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Purchase Tickets</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <div class = 'sectionselector'>
+        <h1>Please Select Your Section</h1>
+        <img src = 'images/oldtraffordseating.png' class = 'img-responsive'>  
+    </div>
+    
+    <div class = 'selectdiv'>
+        <h1>Enter the number of people</h1>
+        <input type= 'text' id = 'numberofpeople'>
+        <select name="seatinglist" form="ticketform" id = 'seatingselect'>
+          <option value="stretford">Stretford End</option>
+          <option value="safstand">Sir Alex Ferguson Stand</option>
+          <option value="eaststand">East Stand</option>
+          <option value="southstand">South Stand</option>
+        </select>
+        
+        <p>Are you a Season ticket Holder?</p>
+        <select name="seasonticketholder" form="ticketform" id = 'seasonticket'>
+            <option value="yesseason">YES</option>
+            <option value="noseason">NO</option>
+        </select>
+    </div>
+        
+    <form id="ticketform">
+        <input type="submit" value = 'Check price and Availability' class = 'ticketsubmit'>   
+    </form>
+<!--<button id = 'exambutton'>checker</button>-->
+        
+        <div class = 'printtickethere'></div>
+        
+        
+<footer>
+        <div id = 'footerdiv1' class = 'row'>
+            <div class="col col-sm-5">
+                <img src = 'images/footerlogo.png' class = 'img-responsive'>
+            </div>
+            <div class="col col-sm-7">
+                <p>Follow Us</p>
+                <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+</footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src = 'main.js'></script>
+    </body>
+</html>
