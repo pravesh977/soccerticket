@@ -45,9 +45,7 @@ ticketsubmit.addEventListener('click', function(event) {
     ticketprice(numberofpeople.value);
     let seasonticket = document.getElementById('seasonticket').value;
     console.log(seasonticket);
-    seasonchecker(seasonticket);
-    
-    
+    seasonchecker(seasonticket);    
 });
 
 
@@ -74,7 +72,7 @@ function seasonchecker (seasonticket, totalprice) {
     let finalprice = 0;
     if (seasonticket === 'yesseason') {
         console.log('i have a seasonticket');
-        finalprice = totalprice;
+        finalprice = (totalprice - (totalprice*10/100));
         console.log(finalprice);
     } else if 
         (seasonticket === 'noseason') {
@@ -84,4 +82,9 @@ function seasonchecker (seasonticket, totalprice) {
     }
 };
 
+
+// I am trying to create function for each task and do not want to pollute my javascript with global variables as i heard it was a bad practice. 
+//On line 53 I have a function that checks the value of the selected stadium selection and gives out total price based on the number of people who want to buy ticket and the section which they chose and stored it to a variable called totalprice.
+
+//Then I created another function called seasonchecker on line 71 and passed totalprice as arguement (is that how we access variables of one function from another function?). seasonchecker function basically gives out a discount of 10% on the totalprice if they have a seasonticket. But when i try to console log finalprice it says its not a number. idk what im doing wrong and i cant access the value of totalprice in seasonchecker function. I know ticketprice has a value and it shows up in the alert when i click on the submit button but i just cant access it in seasonchecker function.
 
